@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS styles */
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      /* padding: 20px; */
+      background: linear-gradient(326deg, #5c4545, #537a6d, #5c4545);
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .logo {
+      position: absolute;
+      font-family: fantasy;
+      font-size: 45px;
+      left: 2.5rem;
+      top: 8px;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      margin: 8px 2.5rem 0px 0px;
+    }
+
+    ul li {
+      padding-left: 10rem;
+      color: white !important;
+    }
+    
+    a{
+      text-decoration: none;
+      color: white;
+    }
+    .header {
+      background-color: #333333;
+      padding: 20px;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .footer {
+      background-color: #333333;
+      padding: 20px;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .segment {
+      margin-bottom: 30px;
+    }
+
+    .segment-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .sub-segment {
+      margin-bottom: 15px;
+    }
+
+    .sub-segment-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .news-feed {
+      margin-bottom: 30px;
+    }
+
+    .news-feed-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      background: #589ba3a1;
+      text-align: center;
+    }
+
+    .news-item {
+      margin-bottom: 15px;
+    }
+
+    .news-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .job-listings {
+      margin-bottom: 30px;
+    }
+
+    .job-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      background: #589ba3a1;
+      text-align: center;
+    }
+
+    .job-item {
+      margin-bottom: 15px;
+    }
+
+    .job-position {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .image {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .carousel-item {
+      text-align: center;
+    }
+
+    .carousel-item img {
+      margin: auto;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .event-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      background: #589ba3a1;
+      text-align: center;
+    }
+    .event-update{
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">B<span style="color: rgb(50, 203, 116);"> lo
+      </span>G</div>
+    <div>
+      <ul>
+        <a href="#news"><li>News</li></a>
+        <a href="#event"><li>Event</li></a>
+        <a href="#job"><li>Job</li></a>
+      </ul>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row segment">
+      <div class="col-md-4">
+        <h2 class="segment-title">Segment A</h2>
+        <div class="sub-segment">
+          <h3 class="sub-segment-title">Sub-Segment 1</h3>
+          <img class="image" src="https://picsum.photos/200/300" alt="Sub-Segment 1 Image">
+          <p>Blog post summary or introduction</p>
+        </div>
+        <div class="sub-segment">
+          <h3 class="sub-segment-title">Sub-Segment 2</h3>
+          <img class="image" src="https://picsum.photos/200/300" alt="Sub-Segment 2 Image">
+          <p>Blog post summary or introduction</p>
+        </div>
+        <!-- Add more sub-segments here -->
+      </div>
+      <div class="col-md-4">
+        <h2 class="segment-title">Segment B</h2>
+        <div class="sub-segment">
+          <h3 class="sub-segment-title">Sub-Segment 1</h3>
+          <img class="image" src="https://picsum.photos/200/300" alt="Sub-Segment 1 Image">
+          <p>Blog post summary or introduction</p>
+        </div>
+        <div class="sub-segment">
+          <h3 class="sub-segment-title">Sub-Segment 2</h3>
+          <img class="image" src="https://picsum.photos/200/300" alt="Sub-Segment 2 Image">
+          <p>Blog post summary or introduction</p>
+        </div>
+        <div class="sub-segment">
+          <h3 class="sub-segment-title">Sub-Segment 3</h3>
+          <img class="image" src="https://picsum.photos/200/300" alt="Sub-Segment 3 Image">
+          <p>Blog post summary or introduction</p>
+        </div>
+        <!-- Add more sub-segments here -->
+      </div>
+      <div class="col-md-4">
+        <h2 class="segment-title">Segment C</h2>
+        <div class="sub-segment">
+          <h3 class="sub-segment-title">Sub-Segment 1</h3>
+          <img class="image" src="https://picsum.photos/200/300" alt="Sub-Segment 1 Image">
+          <p>Blog post summary or introduction</p>
+        </div>
+        <!-- Add more sub-segments here -->
+      </div>
+    </div>
+
+    <div class="news-feed" id="news">
+      <h2 class="news-feed-title">News Feeds</h2>
+      <div class="news-item">
+        <h3 class="news-title">News Item 1</h3>
+        <img class="image" src="https://picsum.photos/200/300" alt="News Item 1 Image">
+        <p>News summary or description</p>
+      </div>
+      <div class="news-item">
+        <h3 class="news-title">News Item 2</h3>
+        <img class="image" src="https://picsum.photos/200/300" alt="News Item 2 Image">
+        <p>News summary or description</p>
+      </div>
+      <!-- Add more news items here -->
+    </div>
+
+    <div class="event-update" id="event">
+      <h2 class="event-title">Upcoming Events</h2>
+      <div id="event-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="image" src="https://picsum.photos/200/300" alt="Event 1 Image">
+            <div class="carousel-caption">
+              <h3>Event 1</h3>
+              <p>Event details and description</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="image" src="https://picsum.photos/200/300" alt="Event 2 Image">
+            <div class="carousel-caption">
+              <h3>Event 2</h3>
+              <p>Event details and description</p>
+            </div>
+          </div>
+          <!-- Add more event slides here -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#event-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#event-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="job-listings" id="job">
+      <h2 class="job-title">Job Listings</h2>
+      <div class="job-item">
+        <h3 class="job-position">Job Position 1</h3>
+        <img class="image" src="https://picsum.photos/200/300" alt="Job Position 1 Image">
+        <p>Job description and requirements</p>
+      </div>
+      <div class="job-item">
+        <h3 class="job-position">Job Position 2</h3>
+        <img class="image" src="https://picsum.photos/200/300" alt="Job Position 2 Image">
+        <p>Job description and requirements</p>
+      </div>
+      <!-- Add more job listings here -->
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2023 Blog Website. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
